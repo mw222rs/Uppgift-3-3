@@ -1,20 +1,24 @@
 body {
-    background: grey;
+    background: #FFF;
     font-family: Verdana, Times;
     font-size: 13px;
     line-height: 1.7em;
+    color: #786f66;
     
 }
 
 #container {
-    background: #FFF;
+    background: #4f463c;
     width: 600px;
     margin: 10px auto 10px;
+    padding: 0;
+    border: 1px solid #ccc8b8;
 }
 #topbar {
-    height: 220px;
-    padding-top: 5px;
+    height: 225px;
+    padding-top: 0;
     padding-right: 2px;
+    color: #e8e5d1;
     text-align: right;
     font-style: italic;
     font-size: 10px;
@@ -27,9 +31,10 @@ body {
     display: none;
 }
 #menu {
-	background: #9EB42E;
+	background: #4f463c;
 	float: left;
 	margin: 0;
+	padding: 0;
 }
 #menu, #menu ul, #menu li, #menu li a ::first-letter {
     text-transform: capitalize;
@@ -37,46 +42,38 @@ body {
 #menu ul {
 	list-style-type: none;
 	border-bottom: none;
-	margin: 0 10px;
-	padding: 0;
+	margin: 5px 10px;
+	padding-left: 0;
 	width: 580px;
 }
 #menu li {
     display: inline;
-    first-letter: capitalize;
 	list-style-type: none;
 	border-bottom: 0;
+	margin: 0;
+	padding: 0;
 }
 #menu li a {
-	color: #798D13;
+	color: #e8e5d1;
 	text-decoration: none;
-	display: inline;
-	padding: 3px;
-	background: gray;
-	border-left: 1px solid black;
-	border-top: 1px solid black;
-	border-right: 1px solid black;
+	padding: 8px 15px;
+	background: #786f66;
+	border-left: 1px solid #4f463c;
+	border-top: 1px solid #827b72;
+	border-right: none;
+	margin: 0;
 }
 #menu li a:visited{
-	color: #798D13;
-	background: gray;
+	color: #e8e5d1;
+	background: #786f66;
 }
 #menu li a:hover{
-	color: #798D13;
-	background: gray;
-}
-#menu li a:active{
-	color: #FFF;
-	background: grey;
-	
+	color: #e8e5d1;
+	background: #9c9084;
 }
 .active li {
-	color: black;
-	background: #FFF;
-}
-.active li a:visited{
-	color: black;
-	background: #FFF;
+	background: #e8e5d1;
+	color: #786f66;
 }
 img {
 	margin-right: 5px;
@@ -85,19 +82,40 @@ img {
 }
 #content {
 	padding: 10px;
+	background: #e8e5d1;
 }
 #maincontent {
 	float: left;
 	width: 340px;
 }
+#maincontent h1 {
+	font-size: 30px;
+	font-weight: normal;
+	font-family: times;
+}
 #subcontent {
-	margin-top: 30px;
+	margin-top: 20px;
 	padding: 10px;
 	font-size: 10px;
 	width: 215px;
-	border-left: 1px dashed black;
+	border-left: 1px dashed #bfbfbf;
 	float: right;
 	line-height: 2em;
+}
+#subcontent h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	color: #4f463c;
+	font-weight: normal;
+	font-family: times;
+}
+#subcontent h2 {
+	padding: 0;
+	font-size: 14px;
+	color: #4f463c;
+	font-weight: normal;
+	font-family: times;
 }
 #subcontent ul {
 	margin: 0;
